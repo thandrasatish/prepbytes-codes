@@ -1,0 +1,47 @@
+C - CODE
+#include <stdio.h>
+int main()
+{
+int n,t;
+scanf("%d",&t);
+while(t--)
+{
+  scanf("%d\n",&n);
+  if(((n % 4 == 0) && (n % 100!= 0)) || (n%400 == 0))
+  printf("Yes\n");
+  else
+  printf("No\n");
+}
+}
+///////////////////////////////////////////////
+PYTHON CODE
+n=int(input())
+for i in range(n):
+  m=int(input())
+  if(m%4==0 and m%100!=0 or m%400==0):
+    print("Yes")
+  else:
+    print("No")
+/////////////////////////////////////////////
+JAVA CODE
+import java.util.*;
+import java.io.*;
+public class Main {
+  public static void main(String args[]) throws IOException
+  {
+    long t,n;
+    int i;
+  Scanner s=new Scanner(System.in);
+  t=s.nextLong();
+  while(t-->0)
+  {
+    n=s.nextLong();
+    if(n%4==0 && (n%100!=0 || n%400==0))
+    System.out.print("Yes");
+    else
+    System.out.print("No");
+    System.out.println();
+  }
+    
+  }
+}

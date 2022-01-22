@@ -1,0 +1,12 @@
+a=int(input())
+for i in range(a):
+  A,B,C,D,E,F,G,H=map(int,input().split())
+  w1 = max(A,E)
+  w2 = min(C,G)
+  width =max(0, w2-w1) 
+  h1 = max(B,F)
+  h2 = min(D,H)
+  height = max(0, h2-h1)
+  a1 = (C-A)*(D-B)
+  a2 = (G-E)*(H-F)
+  print(a1+a2-width*height)
